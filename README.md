@@ -12,13 +12,13 @@ Install the template with [thirdweb create](https://portal.thirdweb.com/cli/crea
 
 ## Run Locally
 
-Install dependencies
+Install dependencies:
 
 ```bash
   yarn
 ```
 
-Start the server
+Run the script:
 
 ```bash
   yarn start
