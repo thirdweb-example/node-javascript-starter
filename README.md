@@ -1,40 +1,63 @@
-## Using This Template
+# Node JavaScript Starter
 
-Create a project using this example:
+Starter kit to build with Node and thirdweb without additional initial configuration.
 
-```bash
-npx thirdweb create --template node-javascript-starter
-```
+## Installation
 
-Install dependencies:
+Install the template with [thirdweb create](https://portal.thirdweb.com/cli/create)
 
 ```bash
-npm install # npm
-yarn # yarn
+  npx thirdweb create app --node --javascript --evm
 ```
 
-- Export your wallet private key from your wallet and add it to the .env file.
+## Run Locally
 
-```env
-PRIVATE_KEY=your_private_key
-```
-
-- Run the project:
+Install dependencies
 
 ```bash
-npm run dev # npm
-yarn dev # yarn
+  yarn
 ```
 
-## Learn More
+Start the server
 
-To learn more about thirdweb and Next.js, take a look at the following resources:
+```bash
+  yarn start
+```
 
-- [thirdweb Javascript Documentation](https://docs.thirdweb.com/sdk) - learn about our JavaScript SDK.
-- [thirdweb Portal](https://docs.thirdweb.com) - check our guides and development resources.
+## Environment Variables
 
-You can check out [the thirdweb GitHub organization](https://github.com/thirdweb-dev) - your feedback and contributions are welcome!
+To run this project, you will need to add the following environment variables to your .env file:
 
-## Join our Discord!
+```bash
+WALLET_PRIVATE_KEY=paste_your_private_key_here
+THIRDWEB_SECRET_KEY=paste_your_secret_key_here
+```
 
-For any questions, suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
+- Generate your `THIRDWEB_SECRET_KEY` via thirdweb's [dashboard](https://thirdweb.com/create-api-key).
+
+- For `WALLET_PRIVATE_KEY` export your wallet private key from your wallet.
+
+## Deployment
+
+Deploy a copy of your application to IPFS using the following command:
+
+```bash
+  yarn deploy
+```
+
+## Additional Resources
+
+- [Documentation](https://portal.thirdweb.com)
+- [Templates](https://thirdweb.com/templates)
+- [Video Tutorials](https://youtube.com/thirdweb_)
+- [Blog](https://blog.thirdweb.com)
+
+## Contributing
+
+Contributions and [feedback](https://feedback.thirdweb.com) are always welcome!
+
+Please visit our [open source page](https://thirdweb.com/open-source) for more information.
+
+## Need help?
+
+For help, join the [discord](https://discord.gg/thirdweb) or visit our [support page](https://support.thirdweb.com).
