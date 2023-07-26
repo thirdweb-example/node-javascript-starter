@@ -5,12 +5,18 @@ import { readFileSync } from "fs";
 config();
 
 const main = async () => {
-  if (!process.env.PRIVATE_KEY) {
+  if (!process.env.WALLET_PRIVATE_KEY) {
     throw new Error("No private key found");
   }
 
   try {
-    const sdk = ThirdwebSDK.fromPrivateKey(process.env.PRIVATE_KEY, "goerli");
+    const sdk = ThirdwebSDK.fromPrivateKey(
+      process.env.WALLET_PRIVATE_KEY,
+      "mumbai",
+      {
+        secretKey: process.env.THIRDWEB_SECRET_KEY,
+      }
+    );
 
     const contractAddress = await sdk.deployer.deployNFTDrop({
       name: "My Drop",
